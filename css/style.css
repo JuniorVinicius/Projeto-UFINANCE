@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul: #00AAE7;
+    --vermelho-fonte: #F53333;
+    --verde-fonte: #10BF6C;
+    --branco-fundo: #FBFBFB;
+    --verde-button: #00CEAE;
+    --marrom-cabecalho:#C84B31;
+    --branco-fundo-toggle: #F2F2F2;
+}
