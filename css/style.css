@@ -1,15 +1,69 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --azul: #00AAE7;
-    --vermelho-fonte: #F53333;
-    --verde-fonte: #10BF6C;
-    --branco-fundo: #FBFBFB;
-    --verde-button: #00CEAE;
-    --marrom-cabecalho:#C84B31;
-    --branco-fundo-toggle: #F2F2F2;
+:root {
+  --azul: #00aae7;
+  --vermelho-fonte: #f53333;
+  --verde-fonte: #10bf6c;
+  --branco-fundo: #fbfbfb;
+  --verde-button: #00ceae;
+  --marrom-cabecalho: #c84b31;
+  --branco-fundo-toggle: #f2f2f2;
+  --branco-puro: #ffffff;
 }
+
+/*inicio header*/
+
+#cabecalho {
+  width: 100%;
+  height: 72px;
+  background-color: var(--marrom-cabecalho);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 48px;
+}
+
+#cabecalho span {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 70px;
+  padding-right: 48px;
+  color: var(--branco-puro);
+}
+
+/*fim header*/
+
+/*inicio financas*/
+#financas {
+  width: 100%;
+  height: 280px;
+  background-color: var(--branco-fundo);
+  border-radius: 0px 0px 100px 100px;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+#saldo {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+#saldo label{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#saldo h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/*fim financas*/
