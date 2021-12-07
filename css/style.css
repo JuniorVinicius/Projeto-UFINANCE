@@ -16,6 +16,10 @@
   --branco-puro: #ffffff;
 }
 
+body{
+  background-color: var(--branco-fundo);
+}
+
 /*inicio header*/
 
 #cabecalho {
@@ -48,12 +52,13 @@
 
 #saldo {
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  padding-top: 15px;
 }
 
 #saldo label{
@@ -62,8 +67,69 @@
 }
 
 #saldo h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
 }
 
+
+
+#areaReceitaDespesa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.values{
+  display: flex;
+  flex-direction: column;
+}
+
+.values span{
+  font-family: 'Roboto', sans-serif;
+}
+
+.values #receitaText, #despesaText{
+  font-size: 30px;
+}
+
+.values #despesaValue, #receitaValue{
+  font-size: 40px;
+}
+
+.values #receitaValue{
+  color: var(--verde-fonte);
+}
+
+.values #despesaValue{
+  color: var(--vermelho-fonte);
+}
+
+
+#conteudo-da-receita{
+  display:flex;
+  align-items: flex-end;
+}
+
+#conteudo-da-receita img{
+  width: 50px;
+  height: 50px;
+}
+
+
+#conteudo-da-despesa{
+  display:flex;
+  align-items: flex-end;
+}
+
+#conteudo-da-despesa img{
+  width: 50px;
+  height: 50px;
+}
 /*fim financas*/
+
+
+
+
