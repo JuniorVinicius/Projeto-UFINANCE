@@ -1,0 +1,129 @@
+#popup-cadastro{
+    width: 65%;
+    height: 500px;
+    background-color: brown;
+    position: absolute;
+    top: 18%;
+    left: 15%;
+    border-radius: 50px;
+
+}
+
+#caixa-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#popup-cadastro #btn-fechar{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: cyan;
+    border-radius: 50%;
+    top: 24px;
+    right: 29px;
+}
+
+form{
+    display: flex;
+    width: 70%;
+    height: 80%;
+    background: darkblue;
+    margin: 0 auto;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#Ifonte, #Ivalor{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#btn-salvar{
+    width: 110px;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 60px;
+}
+
+#botoes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#botoes #caixa-toggle{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#botoes #caixa-salvar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#toggle{
+    width: 70px;
+    height: 35px;
+    appearance: none;
+    background-color: darkorange;
+    margin-right: 20px;
+    outline: none;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+
+#toggle::before{
+    content: "";
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: darkslategrey;
+}
+
+#toggle:checked::before{
+    left: 79%;
+}
+
+#caixa-span-receita-toggle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#span-receita-toggle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
