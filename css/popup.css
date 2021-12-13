@@ -1,12 +1,21 @@
-#popup-cadastro{
-    width: 65%;
+.popup-cadastro{
+    width: 55%;
     height: 500px;
-    background-color: brown;
+    background-color: var(--branco-fundo);
     position: absolute;
-    top: 18%;
-    left: 15%;
+    top: -108%;
+    left: 23%;
     border-radius: 50px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: top 0ms ease-in-out 200ms;
 
+}
+
+.ativado{
+    top: 18%;
+    opacity: 1;
+    transition: top 0ms ease-in-out 20ms;
 }
 
 #caixa-logo{
@@ -16,11 +25,11 @@
     padding-top: 10px;
 }
 
-#popup-cadastro #btn-fechar{
+.popup-cadastro #btn-fechar{
     position: absolute;
     width: 30px;
     height: 30px;
-    background: cyan;
+    background: var(--vermelho-fonte);
     border-radius: 50%;
     top: 24px;
     right: 29px;
@@ -30,7 +39,6 @@ form{
     display: flex;
     width: 70%;
     height: 80%;
-    background: darkblue;
     margin: 0 auto;
     padding-top: 10px;
     align-items: center;
@@ -46,9 +54,9 @@ form{
 
 .input{
     width: 350px;
-    height: 30px;
+    height: 35px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -67,6 +75,9 @@ form label{
     border-radius: 20px;
     border: 1px solid black;
     margin-right: 60px;
+    background-color: var(--azul);
+    color: var(--branco-puro);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 #botoes{
@@ -93,11 +104,13 @@ form label{
     width: 70px;
     height: 35px;
     appearance: none;
-    background-color: darkorange;
+    background-color: var( --branco-fundo-toggle);
     margin-right: 20px;
     outline: none;
     border-radius: 40px;
     transition: 0.5s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
 }
 
 
@@ -108,12 +121,13 @@ form label{
     position: absolute;
     border-radius: 50%;
     transition: 0.5s;
-    transform: scale(1.1);
-    background-color: darkslategrey;
+    transform: scale(1.2);
+    background-color:var(--verde-fonte);
 }
 
 #toggle:checked::before{
     left: 79%;
+    background-color: var(--vermelho-fonte);
 }
 
 #caixa-span-receita-toggle{
@@ -126,4 +140,168 @@ form label{
 #span-receita-toggle{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+}
+
+#btn-salvar:hover{
+    background-color: var(--verde-fonte);
+    transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 1075px){
+
+    .popup-cadastro{
+        width: 55%;
+        height: 400px;    
+    }
+
+    #caixa-logo img{
+        width: 50%;
+        height: 50%;
+    }
+
+    #toggle:checked::before{
+        left: 75%;
+        background-color: var(--vermelho-fonte);
+    }
+
+    #btn-salvar{
+        margin-right: 20px;
+
+    }
+}
+
+
+@media only screen and (max-width: 730px){
+    #caixa-logo img{
+        padding-top: 20px;
+    }
+
+    #toggle{
+        margin-right: 5px;
+    }
+    #toggle:checked::before{
+        left: 75%;
+        background-color: var(--vermelho-fonte);
+    }
+
+    #btn-salvar{
+        margin-right: 10px;
+
+    }
+
+    #caixa-span-receita-toggle{
+        padding: 8px;
+        padding-right: 0px;
+    }
+
+    .input{
+        width: 250px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    #caixa-logo img{
+        padding-top: 20px;
+        padding-right: 10px;
+    }
+
+
+    form label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    #toggle{
+        width: 70px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #toggle::before{
+        width: 28px;
+        height: 28px;
+        transform: scale(1.2);
+
+    }
+
+    
+
+    #span-receita-toggle{
+        font-size: 16px;
+    }
+
+    #toggle{
+        margin-right: 5px;
+    }
+    #toggle:checked::before{
+        left: 75%;
+        background-color: var(--vermelho-fonte);
+    }
+
+    #btn-salvar{
+        margin-right: 10px;
+        width: 90px;
+        height: 30px;
+
+    }
+
+    .popup-cadastro #btn-fechar{
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .input{
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .popup-cadastro{
+        border-radius: 20px;    
+    }
+   
+    #toggle{
+        width: 70px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    #toggle::before{
+        width: 18px;
+        height: 18px;
+        transform: scale(1.2);
+
+    }
+
+    #span-receita-toggle{
+        font-size: 16px;
+    }
+
+    #toggle:checked::before{
+        left: 75%;
+        background-color: var(--vermelho-fonte);
+    }
+
+    #btn-salvar{
+        margin-right: 10px;
+        width: 86px;
+        height: 30px;
+
+    }
+    .input{
+        width: 130px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }

@@ -25,4 +25,4 @@ As tecnologias a serem utilizadas serão:
 [Gislayne Galdino](https://github.com/GislayneGaldino)      
 [Haysha Silva](https://github.com/hayshakelly)    
 [Junior Vinicius](https://github.com/JuniorTen)    
-[Rudney Bernardo]  
+[Rudney Bernardo](https://github.com/RudneyBernardo)  

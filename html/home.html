@@ -15,7 +15,7 @@
         <a id="logo" href="../html/home.html">
             <img id="imagem" src="../img/logo.png" alt="Logo da UFALFINANCE" title="Logo da UFALFINANCE">
         </a>
-        <span>+</span>
+        <span id="botao-cadastro">+</span>
     </header>
 
     <!--Fim do cabeçalho-->
@@ -27,7 +27,7 @@
         <div id="financas">
             <div id="saldo">
                 <label for="valor-saldo">Saldo</label>
-                <h1 id="valor-saldo">R$ 900.00</h1>
+                <h1 id="valor-saldo">R$ 0.00</h1>
 
             <div id="areaReceitaDespesa">
 
@@ -36,7 +36,7 @@
 
                     <div class="values">
                         <span id="receitaText">Receita</span>
-                        <span id="receitaValue" >R$1000.00</span>
+                        <span id="receitaValue" >R$ 0.00</span>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
 
                     <div class="values">
                         <span id="despesaText">Despesa</span>
-                        <span id="despesaValue">R$ -100.00</span>
+                        <span id="despesaValue">R$ 0.00</span>
                     </div>
 
                 </div>
@@ -59,87 +59,29 @@
             <!--Lista de itens-->
             <div class="caixa-conteudo">
                 <ul>
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.000.000.00</span>
-                    </li>
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Água</span>
-                        <span>R$ 1000.00</span>
-                    </li>
-
-                    <li>
-                        <span>Bico</span>
-                        <span>R$ 5000.00</span>
-                    </li>
+                    
                 </ul>
             </div>
 
+
             <div id="caixa-post" class="caixa-conteudo">
           
-                <div class="post">
+                <div onclick="redirect(0)" class="post">
                     <img src="../img/img1.jpg" alt="">
                     <span>Receitas</span>
                 </div>
 
-                <div class="post">
+                <div onclick="redirect(1)"  class="post">
                     <img src="../img/img2.jpg" alt="">
                     <span>Despesas</span>
                 </div>
 
-                <div class="post">
+                <div onclick="redirect(2)"  class="post">
                     <img src="../img/img3.jpg" alt="">
                     <span>Finanças</span>
                 </div>
 
-                <div class="post">
+                <div onclick="redirect(3)"  class="post">
                     <img src="../img/img4.jpg" alt="">
                     <span>Empreendedorismo</span>
                 </div>             
@@ -152,13 +94,13 @@
     </main>
 
     <!--Popup cadastro-->
-    <div id="popup-cadastro">
+    <div class="popup-cadastro" >
         <div id="caixa-logo">
             <img src="../img/logo.png" alt="logo da UFALFINANCE">
         </div>
         <div id="btn-fechar"></div>
 
-        <form action="">
+        <form action="" autocomplete="off">
             <div id="Ifonte">
                 <label for="input-fonte">Fonte</label>
                 <input type="text" name="" class="input" id="input-fonte" placeholder="Fonte">
@@ -185,5 +127,9 @@
     </div>
 
     <!--Fim do conteúdo-->
+
+    <script src="../js/popup-cadastro.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script src="../js/redirect.js"></script>
 </body>
 </html>

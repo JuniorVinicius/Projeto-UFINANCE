@@ -38,6 +38,7 @@ body{
   font-size: 70px;
   padding-right: 48px;
   color: var(--branco-puro);
+  cursor: pointer;
 }
 
 /*fim header*/
@@ -150,6 +151,10 @@ body{
   overflow-y: auto;
 }
 
+ul{
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 li{
   display: flex;
