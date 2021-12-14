@@ -305,3 +305,47 @@ form label{
         margin-bottom: 10px;
     }
 }
+
+@media only screen and (max-width: 320px){
+    .popup-cadastro{
+        width: 70%;
+        left: 15%;   
+    }
+  
+    #toggle{
+        width: 70px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    #toggle::before{
+        width: 14px;
+        height: 14px;
+        transform: scale(1.2);
+
+    }
+
+    #toggle:checked::before{
+        left: 74%;
+        background-color: var(--vermelho-fonte);
+    }
+    .popup-cadastro #btn-fechar{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 18px;
+        right: 21px;
+    }
+    #btn-salvar{
+        margin-right: 10px;
+        width: 86px;
+        height: 30px;
+
+    }
+    .input{
+        width: 110px;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

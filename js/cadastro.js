@@ -7,6 +7,7 @@ const toggle = document.querySelector("#toggle");
 const receitaValue = document.querySelector("#receitaValue");
 const despesaValue = document.querySelector("#despesaValue");
 const textoToggle = document.querySelector("#span-receita-toggle");
+const caixaRegistrosVazia = document.querySelector("#caixa-registros");
 
 let receita = 0;
 let despesa = 0;
@@ -37,9 +38,9 @@ function changeValue(valor) {
   }
 
   if (checked === true) {
-    despesa = despesa - valor;
+    despesa  -= valor;
   } else {
-    receita = receita + valor;
+    receita += valor;
   }
 
   let valorDoSaldo = receita + despesa;
@@ -75,19 +76,28 @@ function addElement(registro) {
   const spanValor = document.createElement("span");
 
   let count = registro.length;
+
   spanFonte.textContent = registro[count - 2];
   spanValor.textContent = Number(registro[count - 1]).toFixed(2);
+
+  if (Math.sign(registro[count - 1]) === 1){
+    spanValor.style.color = "var(--verde-fonte)";
+  }else{
+    spanValor.style.color = "var(--vermelho-fonte)";
+  }
 
   li.appendChild(spanFonte);
   li.appendChild(spanValor);
 
   lista.appendChild(li);
+
+  caixaRegistrosVazia.style.display = "none";
 }
 
 function saveRecord (nomeFonte, valorDigitado){
   
   if (checked === true){
-    registro.push(nomeFonte, -Number(valorDigitado));
+    registro.push(nomeFonte, Number(valorDigitado) * -1);
   }else{
     registro.push(nomeFonte, valorDigitado);
   }
@@ -101,24 +111,41 @@ form.addEventListener("submit", (event) => {
 
   let nomeFonte = inputFonte.value;
   let valorDigitado = inputNumber.value;
-
-  changeValue(Number(valorDigitado)); 
-  
-  saveRecord(nomeFonte, valorDigitado);
-
+ 
   if (!nomeFonte && !valorDigitado) {
     alert("Insira uma Fonte e um Valor");
   } else if (!nomeFonte) {
     alert("Insira uma Fonte");
   } else if (!valorDigitado) {
-    alert("insira um valor");
-  }else if (valorDigitado!=Number){
-    alert("insira um valor válido");
+    alert("Insira um valor");
   }
 
-  if (nomeFonte && valorDigitado == Number) {
-    addElement(registro);
+
+  if (checked === false){
+    if (Math.sign(valorDigitado) === -1){
+      alert(
+        `Insira apenas o valor, caso deseje cadastrar uma despesa, 
+        marque o botão ao lado e informe apenas os valores.`
+        );
+    }
+
+    if (nomeFonte && Math.sign(valorDigitado) === 1) {
+      changeValue(Number(valorDigitado)); 
+      saveRecord(nomeFonte, valorDigitado);
+      addElement(registro);
+    }
+
+  }else{
+    if (nomeFonte && valorDigitado) {
+      if (Math.sign(valorDigitado) === -1){
+        valorDigitado *= -1;
+      }
+      changeValue(Number(valorDigitado)); 
+      saveRecord(nomeFonte, valorDigitado);
+      addElement(registro);
+    }
   }
+
 
   inputNumber.value = "";
   inputFonte.value = "";
