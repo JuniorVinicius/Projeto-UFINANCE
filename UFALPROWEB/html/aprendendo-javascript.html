@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/favicon-ufalprogweb.png"
+      type="image/x-icon"
+    />
+    <title>UFALPROGWEB</title>
+  </head>
+  <body>
+    <header>
+      <a href="../html/aprendendo-javascript.html">
+        <img src="../../img/logo-ufalProgWeb.png" alt="Logo UFALPROWEB" />
+      </a>
+    </header>
+
+    <main>
+      <section id="image-box">
+        <img src="../../img/capaJS.jpg" alt="imagem de código javascript" />
+      </section>
+
+      <h1>O que é Javascript?</h1>
+
+      <article class="paragrafo">
+        <section class="box-conteudo">
+          <p>
+            JavaScript é uma das linguagens de programação mais populares e
+            usadas no mundo. Hoje você vai aprender mais sobre o que ela é, como
+            funciona, onde pode ser aplicada e como ela se diferencia dos demais
+            tipos.
+          </p>
+          <p>
+            Também conhecida apenas como JS, JavaScript é uma linguagem de
+            programação usada para desenvolver aplicações, sistemas e serviços
+            de alta complexidade.Com ela, você pode criar páginas web dinâmicas,
+            animações, mapas interativos, gráficos em três dimensões,
+            aplicativos para dispositivos móveis e games para plataformas
+            portáteis.
+          </p>
+          <p>
+            Ela atua como um complemento às linguagens HTML, CSS e PHP no
+            momento em que o desenvolvedor vai construir uma página na internet.
+            Resumidamente, estas linguagens de programação interagem entre si
+            assim:
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+              – Permite adicionar conteúdos em uma página através de marcação de
+              textos. É a estrutura óssea de um site.
+            </li>
+
+            <li>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >CSS</a
+              >– Especifica o estilo do design do layout de uma página. É tudo
+              relacionado à aparência de um site.
+            </li>
+
+            <li>
+              <a
+                href="https://www.w3schools.com/php/default.asp"
+                target="_blank"
+                >PHP</a
+              >
+              – Dinamiza o processo de desenvolvimento de uma página adicionando
+              extensões e aplicações dinâmicas.
+            </li>
+
+            <li>
+              JavaScript – Controla o comportamento dos elementos de uma página,
+              executando funções dinâmicas dos conteúdos, animações, aplicativos
+              e interações em geral.
+            </li>
+          </ul>
+
+          <p>
+            Neste caso, o HTML seria a estrutura geral, as portas, corredores e
+            paredes. O CSS entra aqui como a decoração geral, os tapetes e
+            tintura usados para deixá-la mais bonita. E por fim, o JavaScript
+            adiciona a responsividade e a funcionalidade da casa, em que você
+            pode abrir portas, ligar ou desligar a luz por interruptores. Você
+            até pode gerenciar tudo isso sem JS, mas é como se estivesse
+            atrasado algumas décadas.
+          </p>
+        </section>
+
+        <h2>Escreva seu primeiro código em JavaScript!</h2>
+
+        <section class="box-conteudo">
+          <p>
+            Para começar, mostraremos como adicionar alguns comandos JavaScript
+            básicos à sua página, criando um exemplo de "Olá mundo!" e mostrando
+            esse exemplo no console do navegador. Sendo assim vamos assumir que
+            você tem um conhecimento básico/iniciante de HTML e CSS e conhece um
+            pouco sobre linguagens de programação para este teste. Mas se não
+            souber tudo bem ao final do post deixaremos uma grande dica para se
+            aprofundar nos estudos. Agora vamos lá!
+          </p>
+          <p>
+            Primeiro, vá para o seu site de teste e crie uma nova pasta chamada
+            scripts. Em seguida, dentro da nova pasta de scripts que você acabou
+            de criar, crie um novo arquivo chamado main.js. Salve na sua pasta
+            de scripts.
+          </p>
+          <p>
+            Em seguida, no seu arquivo index.html, insira o seguinte elemento em
+            uma nova linha logo antes da tag de fechamento
+            <span>&lsaquo;/body&rsaquo;</span>:
+          </p>
+          <p>
+            &lsaquo;script src="scripts/main.js"&rsaquo;&lsaquo;/script&rsaquo;
+          </p>
+
+          <p>
+            Isso é basicamente a mesma coisa que o elemento &lsaquo;link&rsaquo;
+            para o CSS — ele aplica o JavaScript à página, para que ele tenha
+            efeito no HTML (junto com o CSS e qualquer outra coisa na página).
+          </p>
+
+          <p>
+            Agora vamos criar uma variável. Mas o que é uma variável? Bom, de
+            maneira geral podemos dizer que variável é um espaço na memória do
+            computador onde um determinado dado é guardado. São como caixinhas
+            onde você pode guardar dados. Em javascript elas podem ser
+            declaradas com as palavras reservadas
+            <strong>let, var e const </strong>.
+          </p>
+
+          <p>
+            Neste exemplo vamos utilizar o const, que serve para declarar
+            constantes, aqui, como o valor não será alterado, constantes são
+            mais indicadas. Vamos ao código!
+          </p>
+
+          <p>Em seu arquivo main.js escreva:</p>
+
+          <p>const frase = "Hello World!"</p>
+
+          <p>
+            Com isso declaramos uma variável de nome frase que recebe uma string
+            Hello World! A declaração de strings em JavaScript podem serem
+            feitas com aspas duplas ou simples.
+          </p>
+
+          <p>
+            Logo em seguida, vamos mostrar esse valor contido na variável
+            palavra. Sendo assim escreva:
+          </p>
+
+          <p>console.log(frase)</p>
+
+          <p>
+            Após isso vá ao seu navegador com o arquivo index.html aberto,
+            clique com botão direito do mouse e abra o inspecionar elemento.
+            Após isso clique em console e se você fez todos os passos certinho,
+            a palavra Hello World! deve estar aparecendo no console. Simples
+            Não?
+          </p>
+
+          <p>
+            Outra forma seria simplesmente passando o "Hello World!" dentro do
+            console.log. Ficaria assim:
+          </p>
+
+          <p>console.log("Hello World!")</p>
+
+          <h3>Agora vamos praticar um pouco em nosso site:</h3>
+        </section>
+
+        <section class="hello-try">
+          <div id="box1" class="try-your-self-box">
+            <span class="texto-explicativo">
+              Escreva o que falta para exebir o "Hello World!"
+            </span>
+
+            <form id="form1" action="">
+              <span class="spanVar">const</span
+              ><input
+                maxlength="5"
+                type="text"
+                autocomplete="off"
+                id="variavel"
+              />
+              <span class="spanVar">=</span><span class="spanStr">"</span>
+              <input
+                maxlength="12"
+                type="text"
+                autocomplete="off"
+                id="string"
+              />
+              <span class="spanStr">"</span><br />
+              <span class="spanVarName">console.</span>
+              <i class="spanLog">log</i>(
+              <span class="spanVarName">hello</span>)<br />
+
+              <input
+                id="submit1"
+                class="submit"
+                type="submit"
+                value="Enviar resposta"
+              />
+            </form>
+            <br />
+
+            <span class="resposta" id="resposta1"></span>
+          </div>
+        </section>
+
+        <h2>Como somar dois números?</h2>
+
+        <section class="box-conteudo">
+          <p>
+            Outra coisa muito comum quando se está programando, é fazer
+            operaçãoes matemáticas. Sendo assim, vamos agora aprender a como
+            fazer essas operaçãoes em javascript.
+          </p>
+          <p>
+            Para se fazer cálculos matemáticos em javascript é muito semelhante
+            a forma como você normalmente as faz em uma calculadora, basicamente
+            você atribui a operação desejada
+            <strong>(multiplicação, divisão, adição, subtração, etc.)</strong> a
+            uma variavel e manda exibir no console, ou simplesmente faz todo o
+            cáculo dentro do próprio console. Nesse exemplo mostraremos como
+            armazenar em uma constante.
+          </p>
+          <p>
+            Sendo assim, primeiro de tudo, vamos pegar o conceito aprendido
+            anteriormente e declarar uma constante que vai receber o valor dessa
+            operação:
+          </p>
+
+          <p>const calculo = 1 + 1</p>
+
+          <p>Apos isso apenas precisamos passar a constante para o console:</p>
+
+          <p>console.log(calculo)</p>
+
+          <p>
+            E após isso verificar o resultado no console do navegador, se
+            estiver tudo correto, você receberá o valor da soma, ou seja 1 + 1 =
+            2.
+          </p>
+
+          <h3>Agora vamos praticar no nosso site novamente:</h3>
+        </section>
+
+        <section class="hello-try">
+          <div id="box2" class="try-your-self-box">
+            <span class="texto-explicativo">
+              Declare uma variável chamada somar e atribua a ela a soma dos
+              numeros 10 e 5.
+            </span>
+
+            <form id="form2" action="">
+              <span class="spanVar">const</span
+              ><input maxlength="5" type="text" autocomplete="off" id="soma" />
+              <span class="spanVar">=</span>
+              <input maxlength="6" type="text" autocomplete="off" id="numero" />
+              <br />
+              <span class="spanVarName">console.</span>
+              <i class="spanLog">log</i>(
+              <span class="spanVarName">somar</span>)<br />
+
+              <input
+                id="submit2"
+                class="submit"
+                type="submit"
+                value="Enviar resposta"
+              />
+            </form>
+            <br />
+            <span class="resposta" id="resposta2"></span>
+          </div>
+        </section>
+
+        <h2>Como juntar e exibir texto e valores de variáveis?</h2>
+
+        <section class="box-conteudo">
+          <p>
+            Se já chegou até aqui significa que está gostando do javascript.
+            Ficamos muito felizes com isso. Agora vamos untar texto e valores de
+            uma variável e exibir isso pra gente no console do navegador.
+          </p>
+          <p>
+            isso que iremos fazer agora é um processo, que em programação
+            chamamos de <strong>Concatenar</strong>. Mas o que é isso?
+            Concatenar é uma palavra chique da programação que significa
+            "colocar junto". Para colocar strings juntas em JavaScript, usamos o
+            operador (+), o mesmo usamos para adicionar números, mas neste
+            contexto é algo diferente.
+          </p>
+          <p>
+            Mas... Por que é diferente? Bom mesmo que estejamos passando uma
+            váriavel que contém numeros dentro dela, quando usamos operador (+)
+            para juntar um texto e um numero, o valor que será exibido ou
+            armazenado na variável será uma string. Existem muitas formas de se
+            concaternar em javascript, seja utilizandoas funções <strong>
+              CONCATENATE ou CONCAT,TEXT ou TEXTJOIN</strong
+            >, mas nesse exemplo utilizaremos o operador (+) mesmo.
+          </p>
+
+          <p>
+            Vamos lá! Primeiro declare uma constante que irá receber a soma de
+            dois números, nestes exemplo 5 + 8.
+          </p>
+
+          <p>const somando = 5 + 8</p>
+
+          <p>
+            Após isso, chame o console.log inserindo o texto que deseja exibir
+            entre áspas e logo em seguida adicione o operador (+) e por fim o
+            nome da constante que deseja exibir no caso do nosso exemplo a
+            constante somando.
+          </p>
+
+          <p>console.log("O resultado da soma é = " + somando)</p>
+
+          <p>
+            Se você fez tudo certinho, o resultado obtido será: O resultado da
+            soma é = 13.
+          </p>
+
+          <p>
+            Bem legal, não? Agora vamos praticar aqui no site para não esquecer.
+          </p>
+        </section>
+
+        <section class="hello-try">
+          <div id="box3" class="try-your-self-box">
+            <span class="texto-explicativo">
+              Escreva o que falta para exebir o "Hello World!"
+            </span>
+
+            <form id="form3" action="">
+              <span class="spanVar">const </span
+              ><span class="spanVarName">soma </span>
+              <span
+                ><i class="spanVar">=</i> 10 <i class="spanVar">+</i> 5</span
+              >
+              <br />
+              <span class="spanVarName">console.</span>
+              <i class="spanLog">log</i>(
+              <span class="spanVarName">"O resultado da soma é = "</span
+              ><input
+                maxlength="6"
+                type="text"
+                autocomplete="off"
+                id="varConc"
+              />)<br />
+
+              <input
+                id="submit3"
+                class="submit"
+                type="submit"
+                value="Enviar resposta"
+              />
+            </form>
+            <br />
+            <span class="resposta" id="resposta3"></span>
+          </div>
+        </section>
+
+        <section class="box-conteudo">
+          <h3>
+            E aí, gostou? Lembra da nossa dica? Bom, esses foram apenas alguns
+            comandos simples e básicos sobre o Javascript se quiser se
+            aprofundar mais e aprender sobre essa linguagem, clique em uma das
+            imagens no rodapé do site que você será levado para a docuementação
+            da linguagem. Lá você irá aprender todo o funcionamento do
+            JavaScript e muito mais sobre esse universo da programação que só
+            cresce cada vez mais, trazendo possibilidades que vai desde bons
+            sálarios até realização como profissional. E o melhor, essas
+            plataformas não cobram nada por isso.
+          </h3>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div id="box-logos">
+        <div>
+          <label>Mozilla Developer</label>
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript"
+            target="_blank"
+          >
+            <img
+              src="../../img/MDN_Web_Docs.svg.png"
+              alt="Logo Mozilla Developer"
+              id="logoMoz"
+            />
+          </a>
+        </div>
+        <div>
+          <label>W3Schools</label>
+          <a href="https://www.w3schools.com/js/" target="_blank">
+            <img
+              src="../../img/W3Schools_logo.svg.png"
+              alt="Logo W3Schools"
+              id="logoW3"
+            />
+          </a>
+        </div>
+        <div>
+          <label>DevDocs</label>
+          <a href="https://devdocs.io/javascript/" target="_blank">
+            <img
+              src="../../img/DevDocs Logo.png"
+              alt="Logo DevDocs"
+              id="logoDD"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="box-text">
+        <span>Confira estes sites para aprender mais.</span>
+        <span
+          >Não temos direito sobre nenhum dessas imagens utilizadas, utilizamos
+          apenas como exemplo e para conectar aos sites.</span
+        >
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

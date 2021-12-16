@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../../img/favicon-ufalgame.png" type="image/x-icon">
+    <title>UFALWEBGAMES</title>
+</head>
+<body>
+     <header>
+         <a href="../html/game.html">
+             <img src="../../img/logo-ufalwegames.png" alt="">
+         </a>
+     </header>
+
+     <div class="conteiner">
+         <h1>Jogo da Velha</h1>
+         <div class="caixa-bloco">
+            <div class="bloco" id="0"></div>
+            <div class="bloco" id="1"></div>
+            <div class="bloco" id="2"></div>
+            <div class="bloco" id="3"></div>
+            <div class="bloco" id="4"></div>
+            <div class="bloco" id="5"></div>
+            <div class="bloco" id="6"></div>
+            <div class="bloco" id="7"></div>
+            <div class="bloco" id="8"></div>
+         </div>
+     </div>
+
+     <div class="turno">
+        <div id="turnoX">X</div>
+        <div id="turnoO">O</div>
+     </div>
+
+     <div class="popup">
+        <h1>Escolha <span>X</span> ou <span>O</span></h1>
+
+        <img src="../../img/highlight_off_white_24dp.svg" alt="">
+
+        <div id="box-buttons">
+            <button onclick="playerChoosed(true)" id="buttonX">X</button>
+            <button onclick="playerChoosed(false)" id="buttonO">O</button>
+        </div>
+     </div>
+     <div class="popup winner">
+        <h1><span id="playerWinner"></span></h1>
+
+        <div id="box-buttons">
+            <button onclick="reload()" class="refresh">
+                <img src="../../img/replay_circle_filled_white_24dp.svg" alt="">
+            </button>
+        </div>
+     </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -39,7 +39,7 @@ a{
 
 #pagina{
     width: 70%;
-    height: 110%;
+    height: 180%;
     background-color:white;
     position: absolute;
     top: 240px;
@@ -48,6 +48,20 @@ a{
     align-items: center;
     box-shadow: 0px 5px 5px rgba(235, 157, 157, 0.3);
 
+}
+
+figure{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+figure a img{
+    width: 180px;
+    background-color: rgb(238, 238, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 h1{
@@ -155,7 +169,7 @@ li{
     }
 
     #pagina{
-        width: 90%;
+        width: 100%;
         top: 210px;
     }
     a{
@@ -170,7 +184,7 @@ li{
     }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 360px){
     #imagem-capa{
         height:145px;
     
@@ -195,4 +209,13 @@ li{
     h2{
         font-size: 16px;
     }
+}
+
+@media only screen and (max-width: 300px){
+
+    #pagina{
+        height: 200%;
+        top: 190px;
+    }
+ 
 }

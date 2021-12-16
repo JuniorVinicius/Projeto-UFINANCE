@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 72px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    margin-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.conteiner{
+    width: 350px;
+    height: 380px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid rgb(63, 0, 122);;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.caixa-bloco{
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.bloco{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(188, 117, 255);
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.turno{
+    width: 350px;
+    height: 72px;
+    background-color: blueviolet;
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid rgb(63, 0, 122);
+    display: none;
+}
+
+#turnoX, #turnoO{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#turnoX{
+    
+    border-right: 2px solid rgb(63, 0, 122);
+}
+
+
+.popup{
+    position: absolute;
+    width: 40%;
+    height: 300px;
+    background-color: blueviolet;
+    top: 200px;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgb(63, 0, 122);
+}
+.popup img{
+    width: 50px;
+    height: 50px;
+}
+button{
+    width: 110px;
+    height: 50px;
+    background-color: rgb(188, 117, 255);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(63, 0, 122);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(63, 0, 122);
+    border: 2px solid rgb(188, 117, 255);
+}
+
+.popup h1 span{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.refresh{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.refresh:hover{
+    background-color: transparent;
+    border: none;
+}
+
+.refresh img:hover{
+    opacity: 0.8;
+    border: none;
+}
+
+.winner{
+    display: none;
+    flex-direction: column-reverse;
+}
+
+.winner span{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+#playerWinner{
+    font-size: 40px;
+}

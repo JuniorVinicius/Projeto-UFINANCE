@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Lobster&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 72px;
+    background-color: #3EBF10;
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+}
+
+
+#image-box{
+    width: 100%;
+    height: 300px;
+}
+
+#image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+h1{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: white;
+
+}
+
+.paragrafo{
+    width: 100%;
+    height: 100%;
+
+}
+
+.box-conteudo{
+    width: 70%;
+    height: 100%;
+    display: flex;
+  
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+h3{
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+h2, p, h3, li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    padding-left: 50px;
+}
+
+li{
+    padding-top: 20px;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+}
+
+.hello-try{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.try-your-self-box{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(180, 180, 180);
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.submit{
+    border-radius: 20px;
+    background-color: #3EBF10;
+    border: 2px solid #144900;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 8px;
+}
+
+.submit:hover{
+    background-color: #144900;
+    border: 2px solid #3EBF10;
+    transition: 0.3;
+    color: white;
+}
+
+
+form span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.spanVar{
+    color: rgb(0, 4, 255);
+    font-weight: bold;
+}
+.spanStr{
+    color: rgb(222, 238, 0);
+    font-weight: bold;
+}
+.spanVarName{
+    color: rgb(76, 0, 138);
+    font-weight: bold;
+}
+
+.spanLog{
+    color: rgb(0, 255, 0);
+}
+
+#variavel{
+    width: 34px;
+}
+#string{
+    width: 80px;
+}
+
+.texto-explicativo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#soma{
+    width: 45px;
+}
+#numero{
+    width: 45px;
+}
+
+#varConc{
+    width: 50px;
+}
+
+.resposta{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #3EBF10;
+    margin-top: 20px;
+}
+
+#box-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+}
+
+#logoMoz{
+    width: 160px;
+    height: 50px;
+}
+
+#logoW3{
+    width: 60px;
+    height: 50px;
+}
+
+#logoDD{
+    width: 50px;
+    height: 50px;
+}
+
+#box-logos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#box-text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: end;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+#box-text span{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+@media only screen and (max-width:750px){
+    h1{
+        top: 30%;
+        left: 34%;
+    
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    h1{
+        top: 30%;
+        left: 28%;
+    
+    }
+
+    .try-your-self-box{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    h1{
+        top: 30%;
+        left: 22%;
+    
+    }
+
+    .try-your-self-box{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    h1{
+        top: 30%;
+        left: 12%;
+    
+    }
+
+    footer{
+        height: 380px;
+        padding-top: 40px;
+    }
+
+    .try-your-self-box{
+        width: 300px;
+        height: 200px;
+    }
+    #box-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #box-text{
+        margin-top: 20px;
+        height: 120px;
+    }
+}
