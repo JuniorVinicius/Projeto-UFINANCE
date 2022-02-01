@@ -45,5 +45,5 @@ O protótipo do site ou sua demonstração será no dia 16/12/2021. A demonstra�
 [Douglas de Jesus](https://github.com/SI-Douglas)    
 [Gislayne Galdino](https://github.com/GislayneGaldino)      
 [Haysha Silva](https://github.com/hayshakelly)    
-[Junior Vinicius](https://github.com/JuniorTen)    
+[Junior Vinicius](https://github.com/JuniorVinicius)    
 [Rudney Bernardo](https://github.com/RudneyBernardo)  
